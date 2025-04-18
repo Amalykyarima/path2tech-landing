@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./components/header/header.component";
 // import { MetricsModule } from "./components/metrics/metrics.module";
 import { TestimonialsModule } from "./components/testimonials/testimonials.module";
@@ -10,14 +10,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from "./components/footer/footer.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+// import { OnInit } from '@angular/core';
+// import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, TestimonialsModule, MatIconModule, MatCardModule, FooterComponent,   BrowserAnimationsModule,
-    CarouselModule, CommonModule],
+    CarouselModule, RouterModule],
   // templateUrl: './app.component.html',
   template: `
   <app-header></app-header>
