@@ -1,0 +1,14 @@
+<section class="programs">
+  <h2>Our Programs</h2>
+  <div class="programs-grid">
+    <mat-card *ngFor="let program of programs$ | async">
+      <mat-card-header>
+        <mat-icon mat-card-avatar>{{ program.icon }}</mat-icon>
+        <mat-card-title>{{ program.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ program.description }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>

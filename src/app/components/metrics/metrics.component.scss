@@ -1,0 +1,50 @@
+// @import '../../../assets/styles/variables.scss';
+// @import 'src/assets/styles/variables';
+@import 'variables';
+
+.metrics {
+  padding: $section-padding;
+  background: $primary-white;
+  text-align: center;
+
+  &-card {
+    padding: 2rem;
+    border-radius: $radius-md;
+    transition: $transition-base;
+
+    &:hover {
+      background: $gray-100;
+      transform: translateY(-5px);
+    }
+
+    mat-icon {
+      font-size: 2.5rem;
+      width: auto;
+      height: auto;
+      color: $accent-teal;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: map-get($font-sizes, '3xl');
+      color: $text-primary;
+      margin: 0.5rem 0;
+    }
+
+    p {
+      color: $text-secondary;
+      font-size: map-get($font-sizes, 'lg');
+    }
+  }
+}
+
+// Responsive Grid
+@media (min-width: map-get($breakpoints, 'md')) {
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: $container-max-width;
+    margin: 0 auto;
+  }
+}

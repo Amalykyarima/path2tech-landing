@@ -1,0 +1,54 @@
+// @import '../../../assets/styles/variables.scss';
+// @import 'src/assets/styles/variables';
+@import 'variables';
+
+.programs {
+  padding: $section-padding;
+  background: $gray-100;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: $text-primary;
+  }
+
+  &-grid {
+    display: grid;
+    gap: 2rem;
+    max-width: $container-max-width;
+    margin: 0 auto;
+  }
+
+  mat-card {
+    padding: 2rem;
+    border: none;
+    box-shadow: $shadow-sm !important;
+    transition: $transition-base;
+
+    &:hover {
+      box-shadow: $shadow-md !important;
+    }
+
+    mat-icon {
+      color: $accent-teal;
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
+
+    mat-card-title {
+      font-weight: map-get($font-weights, bold);
+      color: $text-primary;
+    }
+
+    p {
+      color: $text-secondary;
+      line-height: 1.6;
+    }
+  }
+}
+
+@media (min-width: map-get($breakpoints, 'md')) {
+  .programs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

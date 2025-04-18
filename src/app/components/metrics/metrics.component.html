@@ -1,0 +1,7 @@
+<section class="metrics">
+  <div class="metric-card" *ngFor="let metric of metrics$ | async">
+    <mat-icon>{{ metric.icon }}</mat-icon>
+    <h3>{{ metric.value }}</h3>
+    <p>{{ metric.title }}</p>
+  </div>
+</section>

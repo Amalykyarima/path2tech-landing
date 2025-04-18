@@ -1,0 +1,157 @@
+// @import 'src/assets/styles/variables';
+@import 'variables';
+
+
+
+/* ======================
+   Main App Styles
+   ====================== */
+
+// Mission Section
+.mission {
+  text-align: center;
+  padding: $section-padding;
+  background: $primary-white;
+
+  h2 {
+    font-size: map-get($font-sizes, '2xl');
+    color: $text-primary;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: map-get($font-sizes, 'lg');
+    color: $text-secondary;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+// Donation Section
+.donate {
+  padding: $section-padding;
+  background: $gray-100;
+  text-align: center;
+
+  h2 {
+    font-size: map-get($font-sizes, '2xl');
+    color: $text-primary;
+    margin-bottom: 1rem;
+  }
+
+  .progress-container {
+    width: 60%;
+    height: 8px;
+    background: $gray-200;
+    border-radius: $radius-lg;
+    margin: 2rem auto;
+    overflow: hidden;
+  }
+
+  .progress-bar {
+    height: 100%;
+    background: $accent-teal;
+    transition: width 0.5s ease-out;
+  }
+
+  .progress-text {
+    color: $text-secondary;
+    font-weight: map-get($font-weights, medium);
+    margin: 1.5rem 0;
+  }
+
+  button {
+    padding: 1rem 2.5rem;
+    font-size: map-get($font-sizes, 'lg');
+    transition: $transition-base;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: $shadow-md;
+    }
+  }
+}
+
+// Footer Styles
+footer {
+  background: $primary-black;
+  color: $primary-white;
+  padding: 3rem 1rem;
+  margin-top: 4rem;
+
+  .footer-content {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+
+    a {
+      color: $primary-white;
+      transition: $transition-fast;
+
+      &:hover {
+        color: $accent-teal;
+      }
+
+      mat-icon {
+        font-size: 24px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  p {
+    color: $gray-300;
+    font-size: map-get($font-sizes, 'sm');
+  }
+}
+
+/* ======================
+   Responsive Breakpoints
+   ====================== */
+@media (max-width: map-get($breakpoints, 'md')) {
+  .mission {
+    padding: 2rem 1rem;
+
+    p {
+      font-size: map-get($font-sizes, 'base');
+    }
+  }
+
+  .donate {
+    .progress-container {
+      width: 80%;
+    }
+
+    button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  footer {
+    padding: 2rem 1rem;
+
+    .social-links {
+      gap: 1rem;
+    }
+  }
+}
+
+@media (max-width: map-get($breakpoints, 'sm')) {
+  .donate {
+    .progress-container {
+      width: 90%;
+    }
+  }
+}
+
+

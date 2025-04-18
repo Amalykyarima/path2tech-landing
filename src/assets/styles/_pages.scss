@@ -1,0 +1,30 @@
+.page-header {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: $gray-100;
+
+  h1 {
+    font-size: map-get($font-sizes, '3xl');
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: map-get($font-sizes, 'lg');
+    color: $text-secondary;
+  }
+}
+
+// Mobile responsive
+@media (max-width: map-get($breakpoints, 'md')) {
+  .page-header {
+    padding: 2rem 1rem;
+
+    h1 {
+      font-size: map-get($font-sizes, '2xl');
+    }
+
+    p {
+      font-size: map-get($font-sizes, 'base');
+    }
+  }
+}

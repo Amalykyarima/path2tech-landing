@@ -1,0 +1,133 @@
+// @import '../../../assets/styles/variables';
+// @import 'src/assets/styles/variables';
+@import 'variables';
+
+header {
+  position: sticky;
+  top: 0;
+  background: $primary-white;
+  z-index: 1000;
+  box-shadow: $shadow-sm;
+  padding: 1rem 0;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .logo {
+    height: $logo-height;
+    transition: $transition-fast;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    a {
+      color: $text-primary;
+      text-decoration: none;
+      font-weight: map-get($font-weights, medium);
+      position: relative;
+      padding: 0.5rem 0;
+      transition: $transition-fast;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: $accent-teal;
+        transition: $transition-base;
+      }
+
+      &:hover {
+        color: $accent-teal;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    button {
+      margin-left: 1rem;
+      border: 2px solid $accent-teal;
+      padding: 0.5rem 1.5rem;
+      transition: $transition-base;
+
+      &:hover {
+        background: rgba($accent-teal, 0.1);
+      }
+    }
+  }
+
+  .mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: $text-primary;
+    font-size: 1.5rem;
+  }
+}
+
+// Mobile Responsive
+@media (max-width: map-get($breakpoints, 'md')) {
+  header {
+    padding: 0.5rem 0;
+
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      height: 100vh;
+      width: 70%;
+      max-width: 300px;
+      background: $primary-white;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2rem;
+      box-shadow: $shadow-lg;
+      transition: $transition-base;
+
+      &.active {
+        right: 0;
+      }
+
+      a {
+        width: 100%;
+        padding: 1rem 0;
+        border-bottom: 1px solid $gray-200;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      button {
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+
+    .mobile-menu-toggle {
+      display: block;
+      z-index: 1001;
+    }
+
+    .logo {
+      height: $logo-height-sm;
+    }
+  }
+}

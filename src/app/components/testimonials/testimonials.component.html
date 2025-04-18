@@ -1,0 +1,15 @@
+<section class="testimonials">
+  <h2>Success Stories</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card" *ngFor="let testimonial of testimonials$ | async">
+      <div class="testimonial-content">
+        <img [src]="'assets/images/' + testimonial.photo" alt="{{ testimonial.name }}">
+        <div class="testimonial-text">
+          <h3>{{ testimonial.name }}</h3>
+          <p class="role">{{ testimonial.role }}</p>
+          <p class="quote">"{{ testimonial.text }}"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
