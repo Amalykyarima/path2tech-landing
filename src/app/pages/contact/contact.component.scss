@@ -18,7 +18,7 @@ body {
 }
 
 .navbar {
-  background-color: #1d3557;
+  background-color: #4c822d;
   color: #fff;
   padding: 1rem 0;
 }
@@ -52,30 +52,37 @@ body {
 }
 
 .hero {
-  background: #e6f0ff;
+  background: linear-gradient(135deg, #4c822d, #63a4ff);
   padding: 3rem 0;
   text-align: center;
+  color: #fff;
 }
 
 .hero h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  color: #fff;
+
 }
 
 .hero p {
   font-size: 1.1rem;
   color: #444;
+  color: #fff;
+
 }
 
 .content-section {
   background-color: #fff;
   padding: 3rem 0;
+  color: #fff;
+
 }
 
 .content-section h3 {
   margin-top: 2rem;
   font-size: 1.4rem;
-  color: #1d3557;
+  color: #4c822d;
 }
 
 .content-section p {
@@ -91,7 +98,7 @@ body {
 }
 
 .footer {
-  background-color: #1d3557;
+  background-color: #4c822d;
   color: #fff;
   text-align: center;
   padding: 1rem 0;

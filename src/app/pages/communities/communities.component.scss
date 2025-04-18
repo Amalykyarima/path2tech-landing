@@ -13,7 +13,7 @@ body {
 
 .logo {
   font-size: 1.5rem;
-  color: #0a58ca;
+  color:#4c822d;
 }
 
 .nav-links {
@@ -31,12 +31,12 @@ body {
 }
 
 .nav-links li a.active {
-  color: #0a58ca;
+  color:#4c822d;
   font-weight: 700;
 }
 
 .communities-hero {
-  background: linear-gradient(135deg, #0a58ca, #63a4ff);
+  background: linear-gradient(135deg,#4c822d, #63a4ff);
   color: white;
   text-align: center;
   padding: 4rem 1rem 3rem;
@@ -55,7 +55,7 @@ body {
 
 .btn-primary {
   background: white;
-  color: #0a58ca;
+  color:#4c822d;
   padding: 0.75rem 1.5rem;
   border-radius: 6px;
   font-weight: 600;
@@ -82,7 +82,7 @@ body {
 
   h4{
     margin: 0.5rem 0;
-    color: #0a58ca;
+    color:#4c822d;
   }
 }
 
@@ -91,7 +91,7 @@ body {
 }
 
 .community-values {
-  background: #eef4fc;
+  background: #c0f4c8;
   padding: 4rem 1rem;
 }
 
@@ -100,6 +100,12 @@ body {
   flex-wrap: wrap;
   gap: 2rem;
   margin-top: 2rem;
+
+  h4{
+
+    color:#4c822d;
+  }
+
 }
 
 .pillar {
@@ -114,13 +120,13 @@ body {
 .community-cta {
   text-align: center;
   padding: 4rem 1rem;
-  background: linear-gradient(to right, #0a58ca, #2d89ef);
+  background: linear-gradient(to right,#4c822d, #2d89ef);
   color: white;
 }
 
 .community-cta .btn-primary {
   background: white;
-  color: #0a58ca;
+  color:#4c822d;
   margin-top: 1rem;
 }
 

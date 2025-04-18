@@ -37,5 +37,9 @@ export const routes: Routes = [
     path: 'join-our-community',
     loadComponent: () => import('./pages/join-our-community/join-our-community.component').then(m => m.JoinOurCommunityComponent)
   },
+  {
+    path: 'explore-communities',
+    loadComponent: () => import('./pages/explore-communities/explore-communities.component').then(m => m.ExploreCommunitiesComponent)
+  },
   // Add other routes
 ];
