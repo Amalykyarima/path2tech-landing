@@ -7,12 +7,11 @@ import { CommonModule } from '@angular/common';
 import { HeroComponent } from "../components/hero/hero.component";
 import { MetricsComponent } from "../components/metrics/metrics.component";
 import { ProgramsComponent } from "../components/programs/programs.component";
-import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, BrowserModule, TestimonialsModule, HeroComponent, MetricsComponent, ProgramsComponent],
+  imports: [CommonModule, TestimonialsModule, HeroComponent, MetricsComponent, ProgramsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
