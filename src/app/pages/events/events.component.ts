@@ -10,5 +10,8 @@ import { RouterModule } from '@angular/router';
   styleUrl: './events.component.scss'
 })
 export class EventsComponent {
+  scrollToBottom(): void {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  }
 
 }

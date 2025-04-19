@@ -41,5 +41,9 @@ export const routes: Routes = [
     path: 'explore-communities',
     loadComponent: () => import('./pages/explore-communities/explore-communities.component').then(m => m.ExploreCommunitiesComponent)
   },
+  {
+    path: 'about-us',
+    loadComponent: () => import('./pages/about-us/about-us.component').then(m => m.AboutUsComponent)
+  },
   // Add other routes
 ];

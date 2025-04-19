@@ -1,1 +1,50 @@
-<p>explore-communities works!</p>
+<section class="explore-hero">
+  <div class="container">
+    <h1>Explore Our Local Communities</h1>
+    <p>Join a regional PathToTech community near you.</p>
+  </div>
+</section>
+
+<section class="community-grid container">
+  <div class="community-card" *ngFor="let c of communities">
+    <img [src]="c.image" [alt]="c.name" />
+    <div class="card-content">
+      <h3>{{ c.name }}</h3>
+      <p>{{ c.description }}</p>
+      <button class="btn-primary" (click)="openJoinForm(c.name)">Join This Community</button>
+    </div>
+  </div>
+</section>
+
+<!-- Join Form Slide Up Section -->
+<section
+  id="joinFormSection"
+  class="join-form-container"
+  [class.active]="selectedCommunity"
+>
+  <div class="container">
+    <h2 *ngIf="selectedCommunity">Join {{ selectedCommunity }}</h2>
+
+    <form #joinForm="ngForm" (ngSubmit)="submitForm(joinForm)">
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" name="name" ngModel required />
+      </div>
+
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" name="email" ngModel required />
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" name="phone" ngModel required />
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">Submit</button>
+        <button type="button" class="btn-secondary" (click)="cancel()">Cancel</button>
+      </div>
+    </form>
+  </div>
+</section>
