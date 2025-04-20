@@ -21,6 +21,7 @@
               "includePaths": ["src/assets/styles"]
             },
             "outputPath": "dist/path2tech-landing",
+            "baseHref": "https://amalykyarima.github.io/path2tech-landing/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -100,6 +101,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
