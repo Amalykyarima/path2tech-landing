@@ -6,13 +6,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from "./components/footer/footer.component";
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, TestimonialsModule, MatIconModule, MatCardModule, FooterComponent,
-   RouterModule,
-    ],
+   RouterModule, ReactiveFormsModule, HttpClientModule ],
   template: `
   <app-header></app-header>
   <router-outlet></router-outlet>
