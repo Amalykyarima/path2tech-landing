@@ -1,68 +1,67 @@
+<section class="join-hero">
+  <div class="container">
+    <h2>Join the PathToTech Community</h2>
+    <p>Get access to our thriving communities, exclusive events, accountability groups, and peer mentorship programs.
+    </p>
+  </div>
+</section>
 
+<section class="join-form-section" *ngIf="!formSubmitted">
+  <div class="container form-container">
+    <form [formGroup]="joinForm" (ngSubmit)="onSubmit()" class="join-form">
 
-  <section class="join-hero">
-    <div class="container">
-      <h2>Join the PathToTech Community</h2>
-      <p>Get access to our thriving communities, exclusive events, accountability groups, and peer mentorship programs.</p>
-    </div>
-  </section>
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input formControlName="fullname" type="text" placeholder="Jane Doe" required>
+      </div>
 
-  <section class="join-form-section" *ngIf="!formSubmitted">
-    <div class="container form-container">
-      <form action="https://formspree.io/f/movdjvay" method="POST" class="join-form">
-        <div class="form-group">
-          <label for="fullname">Full Name</label>
-          <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required>
-        </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input formControlName="email" type="email" placeholder="you@example.com" required>
+      </div>
 
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required>
-        </div>
+      <div class="form-group">
+        <label for="careerStage">Career Stage</label>
+        <select formControlName="careerStage" id="careerStage" name="careerStage" required>
+          <option value="">Select One</option>
+          <option>Student</option>
+          <option>Career Switcher</option>
+          <option>Junior Professional</option>
+          <option>Experienced Professional</option>
+        </select>
+      </div>
 
-        <div class="form-group">
-          <label for="careerStage">Career Stage</label>
-          <select id="careerStage" name="careerStage" required>
-            <option value="">Select One</option>
-            <option>Student</option>
-            <option>Career Switcher</option>
-            <option>Junior Professional</option>
-            <option>Experienced Professional</option>
-          </select>
-        </div>
+      <div class="form-group">
+        <label for="interest">Which community are you most interested in?</label>
+        <select formControlName="interest" id="interest" name="interest" required>
+          <option value="">Choose One</option>
+          <option>Career Switchers</option>
+          <option>Developers Guild</option>
+          <option>Designers in Tech</option>
+          <option>Product & Strategy</option>
+          <option>Accountability Circles</option>
+        </select>
+      </div>
 
-        <div class="form-group">
-          <label for="interest">Which community are you most interested in?</label>
-          <select id="interest" name="interest" required>
-            <option value="">Choose One</option>
-            <option>Career Switchers</option>
-            <option>Developers Guild</option>
-            <option>Designers in Tech</option>
-            <option>Product & Strategy</option>
-            <option>Accountability Circles</option>
-          </select>
-        </div>
+      <div class="form-group">
+        <label for="goals">What do you hope to gain from our community?</label>
+        <textarea formControlName="goals" id="goals" name="goals" rows="4" placeholder="Share your goals..."></textarea>
+      </div>
 
-        <div class="form-group">
-          <label for="goals">What do you hope to gain from our community?</label>
-          <textarea id="goals" name="goals" rows="4" placeholder="Share your goals..."></textarea>
-        </div>
+      <!-- <button type="submit" class="btn-primary">Join Now</button> -->
+      <button type="submit" [disabled]="joinForm.invalid || isSubmitting">
+        {{ isSubmitting ? 'Submitting...' : 'Join Now' }}
+      </button>
+    </form>
 
-        <!-- <button type="submit" class="btn-primary">Join Now</button> -->
-        <button type="submit" class="btn-primary" [disabled]="joinForm.invalid || isSubmitting">
-          {{ isSubmitting ? 'Submitting...' : 'Join Now' }}
-        </button>
-      </form>
-
-    </div>
-  </section>
+  </div>
+</section>
 
 
 <section class="thank-you-section" *ngIf="formSubmitted">
   <div class="container">
     <h2>Thank you!</h2>
     <p>The form was submitted successfully.</p>
-    <a routerLink="/" class="go-back">Go back to Home</a>
+    <a [routerLink]="['/']" class="go-back">Go back to Home</a>
   </div>
 </section>
-

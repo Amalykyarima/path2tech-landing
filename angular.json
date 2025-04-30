@@ -21,7 +21,7 @@
               "includePaths": ["src/assets/styles"]
             },
             "outputPath": "dist/path2tech-landing",
-            "baseHref": "https://amalykyarima.github.io/path2tech-landing/",
+            "baseHref": "/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [

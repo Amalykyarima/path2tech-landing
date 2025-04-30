@@ -112,3 +112,22 @@ body {
   font-size: 0.9rem;
   color: #666;
 }
+
+.thank-you-section {
+
+  .container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 2rem ;
+    color: #4c822d;
+  }
+
+  a {
+    color: #4c822d;
+  }
+
+}
