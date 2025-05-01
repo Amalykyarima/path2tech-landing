@@ -1,0 +1,1 @@
+import{Qb as p,ba as n,cb as o,db as i,lb as a,pb as m}from"./chunk-IMGQHEP2.js";var f=(()=>{class e{static{this.\u0275fac=function(t){return new(t||e)}}static{this.\u0275cmp=n({type:e,selectors:[["app-impact"]],standalone:!0,features:[m],decls:2,vars:0,template:function(t,c){t&1&&(o(0,"p"),a(1,"impact works!"),i())},dependencies:[p]})}}return e})();export{f as ImpactComponent};
