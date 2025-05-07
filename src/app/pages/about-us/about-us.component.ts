@@ -19,7 +19,7 @@ export class AboutUsComponent {
     {
       name: 'Usman Bala',
       title: 'Co-Founder & Program Director',
-      image: 'assets/team/founder.jpg'
+      image: 'assets/team/co-founder.jpg'
     },
     {
       name: 'Ayansola S.G Ayodeji',
