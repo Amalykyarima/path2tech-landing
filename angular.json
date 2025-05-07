@@ -20,7 +20,7 @@
             "stylePreprocessorOptions": {
               "includePaths": ["src/assets/styles"]
             },
-            "outputPath": "docs",
+            "outputPath": "dist",
             "baseHref": "/",
             "index": "src/index.html",
             "browser": "src/main.ts",
