@@ -20,7 +20,7 @@
             "stylePreprocessorOptions": {
               "includePaths": ["src/assets/styles"]
             },
-            "outputPath": "dist/path2tech-landing",
+            "outputPath": "docs",
             "baseHref": "/",
             "index": "src/index.html",
             "browser": "src/main.ts",
