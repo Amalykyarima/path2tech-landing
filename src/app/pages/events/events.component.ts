@@ -29,11 +29,19 @@ export class EventsComponent {
 
     },
     {
-      date: 'Jan 21, 2025',
+      date: 'May 31, 2025',
       title: 'The Analysts Toolkit: Statistics, STorytelling and Strategy',
       description: 'Introduction to Data Analysis',
       link: 'https://fathom.video/share/yhScs19m3q5sumoeuF6TvU7KCmb9n2FS',
       image: 'assets/images/umarMahmoud.JPG'
+
+    },
+    {
+      date: 'June 21, 2025',
+      title: 'Solution Architecture',
+      description: 'Introduction to Solution Architecture',
+      link: 'https://fathom.video/share/ibFApVWYCZSWxkUfRBFHN5odVTPHTfxZ',
+      image: 'assets/images/roosevelt.jpg'
 
     },
 
