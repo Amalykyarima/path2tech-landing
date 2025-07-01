@@ -42,7 +42,13 @@ export class EventsComponent {
       description: 'Introduction to Solution Architecture',
       link: 'https://fathom.video/share/ibFApVWYCZSWxkUfRBFHN5odVTPHTfxZ',
       image: 'assets/images/roosevelt.jpg'
-
+    },
+    {
+      date: 'June 21, 2025',
+      title: 'From Post to Paycheck',
+      description: 'Introduction to Branding',
+      link: 'https://fathom.video/share/JQekJHJCDDwHPtVA2oJhgH1u4Xy62Wsg',
+      image: 'assets/images/wisdom.JPG'
     },
 
 
