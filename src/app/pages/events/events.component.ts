@@ -44,11 +44,18 @@ export class EventsComponent {
       image: 'assets/images/roosevelt.jpg'
     },
     {
-      date: 'June 21, 2025',
+      date: 'June 28, 2025',
       title: 'From Post to Paycheck',
       description: 'Introduction to Branding',
       link: 'https://fathom.video/share/JQekJHJCDDwHPtVA2oJhgH1u4Xy62Wsg',
       image: 'assets/images/wisdom.JPG'
+    },
+    {
+      date: 'July 5, 2025',
+      title: 'Introduction to Business/Tech Sales',
+      description: 'Business/Tech Sales',
+      link: 'https://fathom.video/share/smwBbuKzvo_xR4CYz72zzxvMw-6Pu1Gz',
+      image: 'assets/images/lauretta.JPG'
     },
 
 
