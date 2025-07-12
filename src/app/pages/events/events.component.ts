@@ -61,7 +61,7 @@ export class EventsComponent {
       date: 'July 12, 2025',
       title: 'Introduction to AI Automation',
       description: 'AI Automation',
-      link: 'https://fathom.video/share/smwBbuKzvo_xR4CYz72zzxvMw-6Pu1Gz',
+      link: 'https://fathom.video/share/XHwSZ3N5yzy92AyZzvzYY64SNSVhXAgs',
       image: 'assets/images/malik-automation.JPG'
     },
 
