@@ -57,6 +57,13 @@ export class EventsComponent {
       link: 'https://fathom.video/share/smwBbuKzvo_xR4CYz72zzxvMw-6Pu1Gz',
       image: 'assets/images/lauretta.JPG'
     },
+    {
+      date: 'July 12, 2025',
+      title: 'Introduction to AI Automation',
+      description: 'AI Automation',
+      link: 'https://fathom.video/share/smwBbuKzvo_xR4CYz72zzxvMw-6Pu1Gz',
+      image: 'assets/images/malik-automation.JPG'
+    },
 
 
 
