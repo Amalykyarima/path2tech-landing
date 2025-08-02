@@ -64,6 +64,27 @@ export class EventsComponent {
       link: 'https://fathom.video/share/XHwSZ3N5yzy92AyZzvzYY64SNSVhXAgs',
       image: 'assets/images/malik-automation.JPG'
     },
+    {
+      date: 'July 19, 2025',
+      title: 'Understanding the Business of Technology',
+      description: 'Sales in Tech',
+      link: 'https://fathom.video/share/3-QzP_ePry3AtQeyudYb4oCTm-p5onaC',
+      image: 'assets/images/usman_bala.JPG'
+    },
+    {
+      date: 'August 2, 2025',
+      title: 'My Journey to $35m in revenue working with a Fintech',
+      description: 'AI Automation',
+      link: 'https://fathom.video/share/yimVpk_e1sBVCQekRJ7CZ1wjr7yvLP5p',
+      image: 'assets/images/sadiq.JPG'
+    },
+    {
+      date: 'August 2, 2025',
+      title: 'My Journey to $35m in revenue working with a Fintech (Continued..)',
+      description: 'AI Automation',
+      link: 'https://fathom.video/share/1tTrxhKToDWZPXs4GvCzwBk_xE9YYyEe',
+      image: 'assets/images/sadiq.JPG'
+    },
 
 
 

@@ -32,9 +32,9 @@
       <div *ngFor="let event of events" class="highlight-card" (click)="goToEvent(event)">
         <div class="highlight-info">
           <span class="date-tag">{{ event.date }}</span>
-          <h4>{{ event.title }} — Live Webinar</h4>
-          <p>{{ event.title }}</p>
-          <a [routerLink]="['/join-our-community']" class="btn-secondary">Watch Webinar</a>
+          <h4 class="title">{{ event.title }} — Live Webinar</h4>
+          <p class="">{{ event.title }}</p>
+          <a class="btn-secondary">Watch Webinar</a>
         </div>
         <div class="highlight-img">
           <img [src]="event.image" alt="Webinar" />

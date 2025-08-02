@@ -108,6 +108,7 @@ body {
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .events-grid-section {
@@ -148,6 +149,11 @@ body {
   color: white;
   text-align: center;
   padding: 1.5rem 1rem;
+}
+
+.title {
+font-weight: 800;
+font-size: 16px;
 }
 
 
