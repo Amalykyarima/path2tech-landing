@@ -85,10 +85,15 @@ export class EventsComponent {
       link: 'https://fathom.video/share/1tTrxhKToDWZPXs4GvCzwBk_xE9YYyEe',
       image: 'assets/images/sadiq.JPG'
     },
+    {
+      date: 'August 23, 2025',
+      title: 'Breaking into customer Success',
+      description: 'A beginner Guide for Tech Enthusiasts',
+      link: 'https://fathom.video/share/Xk2aJDG6LoCwobPDFXqPwMPXMVtPeskA',
+      image: 'assets/images/blessing.JPG'
+    }
+];
 
-
-
-  ];
 
 
   scrollToBottom(): void {
