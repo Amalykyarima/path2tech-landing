@@ -91,6 +91,13 @@ export class EventsComponent {
       description: 'A beginner Guide for Tech Enthusiasts',
       link: 'https://fathom.video/share/Xk2aJDG6LoCwobPDFXqPwMPXMVtPeskA',
       image: 'assets/images/blessing.JPG'
+    },
+    {
+      date: 'September 6, 2025',
+      title: 'Breaking into Tech with Design',
+      description: 'A beginner Guide for Designers',
+      link: 'https://fathom.video/share/95CjP7_G5bPZx-vmbN3xY_SswJEDoE95',
+      image: 'assets/images/phillip.jpg'
     }
 ];
 
