@@ -98,8 +98,15 @@ export class EventsComponent {
       description: 'A beginner Guide for Designers',
       link: 'https://fathom.video/share/95CjP7_G5bPZx-vmbN3xY_SswJEDoE95',
       image: 'assets/images/phillip.jpg'
+    },
+    {
+      date: 'September 27, 2025',
+      title: 'Finance in Tech 101',
+      description: 'A beginner Guide for Accountants in Tech',
+      link: 'https://fathom.video/share/LYjdT8z5HD9apy6zrguiSmJF9DLW5ipF',
+      image: 'assets/images/amos.JPG'
     }
-];
+  ];
 
 
 
