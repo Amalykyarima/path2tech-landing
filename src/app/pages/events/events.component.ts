@@ -105,6 +105,20 @@ export class EventsComponent {
       description: 'A beginner Guide for Accountants in Tech',
       link: 'https://fathom.video/share/LYjdT8z5HD9apy6zrguiSmJF9DLW5ipF',
       image: 'assets/images/amos.JPG'
+    },
+    {
+      date: 'October 4, 2025',
+      title: 'The Mentorship Bridge',
+      description: 'Behind the scene of Pathtotech',
+      link: 'https://fathom.video/share/zgDfwCQxzKcaeywsYswRz2V-GzZf211x',
+      image: 'assets/images/mentorshipBridge.jpg'
+    },
+    {
+      date: 'October 4, 2025',
+      title: 'The Mentorship Bridge Continued',
+      description: 'Behind the scene of Pathtotech Continued',
+      link: 'https://fathom.video/share/uQEJ-URGVZDER4bm6qjr6Q65ecaZ2NoT',
+      image: 'assets/images/mentorshipBridge.jpg'
     }
   ];
 
