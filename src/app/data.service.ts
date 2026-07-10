@@ -6,9 +6,9 @@ export class DataService {
 
   getMetrics(): Observable<any[]> { // Specify return type
     return of([ // Wrap with rxjs of()
-      { title: 'Weekly Mentorship', value: '1,000+', icon: 'work' },
-      { title: 'Building Communities', value: '50+', icon: 'building' },
-      { title: 'Mentorship Forum', value: '$2M+', icon: 'group' }
+      { title: 'Students Mentored', value: '1,000+', icon: 'people' },
+      { title: 'Communities Built', value: '50+', icon: 'public' },
+      { title: 'Scholarships Awarded', value: '$2M+', icon: 'school' }
     ]);
   }
 

@@ -26,10 +26,6 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/communities/communities.component').then(m => m.CommunitiesComponent)
   },
   {
-    path: 'contact',
-    loadComponent: () => import('./pages/contact/contact.component').then(m => m.ContactComponent)
-  },
-  {
     path: 'events',
     loadComponent: () => import('./pages/events/events.component').then(m => m.EventsComponent)
   },

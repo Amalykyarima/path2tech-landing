@@ -21,6 +21,6 @@ export class ProgramsComponent {
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.programs$ = this.dataService.getMetrics(); // Now returns Observable
+    this.programs$ = this.dataService.getPrograms();
   }
 }
